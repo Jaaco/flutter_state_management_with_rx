@@ -1,4 +1,4 @@
-# State Management with rx_dart
+# Flutter State Management with rx_dart
 
 This repo shows a very basic example of state management utilizing BehaviorSubjects from rx_dart.
 
