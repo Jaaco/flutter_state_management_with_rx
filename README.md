@@ -1,6 +1,13 @@
 # Flutter State Management with rx_dart
 
-This repo shows a very basic example of state management utilizing BehaviorSubjects from rx_dart.
+This repo shows a very basic example of state management utilizing BehaviorSubjects from rx_dart
+
+## How
+### State Class
+Create a state class with a BehaviorSubject with the type of your state. Use BehaviorSubject.seeded() to add an initial value. Inside this state class, add all function which can mutate the state. Take any arguments in the function & do whatever manipulation and database calls are necessary, then add the new state to the stream.
+
+### Subscribe to State
+In order to listen to the state, create a stateful widget. In the initState method, add a listener to the stream (BehaviorSubject) of the state. Inside this listener, you will receive an event (state) everytime the stream emits a new value. Use this value to change the widgets variables and call setState. 
 
 ## Why
 Like any other state management solution, there are some advantages as well as disadvantages to this approach.
